@@ -1,5 +1,0 @@
-app/page.tsx
-app/layout.tsx
-app/globals.css
-components/Navbar.tsx
-components/Footer.tsx
