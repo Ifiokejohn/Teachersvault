@@ -1,11 +1,13 @@
-export default function ResourcePage({
+export default async function ResourcePage({
   params,
 }: {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }) {
+  const { id } = await params;
+
   return (
     <div>
-      <h1>Resource ID: {params.id}</h1>
+      <h1>Resource ID: {id}</h1>
     </div>
   );
 }
