@@ -29,7 +29,8 @@ export default async function ResourceDetailPage({
 
   const resource = MOCK_RESOURCE;
 
-  (
+  
+      return (
     <section className="mx-auto max-w-4xl px-6 py-16">
       <div className="flex flex-wrap items-center gap-3 mb-4">
         <span className="font-mono text-xs uppercase tracking-wide bg-vault-green text-vault-paper px-3 py-1 rounded-sm">
