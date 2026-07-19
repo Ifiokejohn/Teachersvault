@@ -48,12 +48,16 @@ const ALL_RESOURCES: Resource[] = [
   },
 ];
 
-export default function ResourcesPage({
+export default async function ResourcesPage({
   searchParams,
 }: {
-  searchParams: { q?: string; subject?: string; class?: string };
+  searchParams: Promise<{
+    q?: string;
+    subject?: string;
+    class?: string;
+  }>;
 }) {
-  const { q, subject, class: classLevel } = searchParams;
+  const { q, subject, class: classLevel } = await searchParams;
 
   const filtered = ALL_RESOURCES.filter((r) => {
     if (subject && r.subject !== subject) return false;
@@ -91,4 +95,3 @@ export default function ResourcesPage({
     </section>
   );
 }
-
