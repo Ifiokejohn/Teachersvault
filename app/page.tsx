@@ -1,3 +1,4 @@
+import { Suspense } from "react";
 import Link from "next/link";
 import ResourceCard, { Resource } from "@/components/ResourceCard";
 import SearchBar from "@/components/SearchBar";
