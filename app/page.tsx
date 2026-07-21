@@ -73,9 +73,11 @@ export default function HomePage() {
           </div>
 
           <div className="mt-12 max-w-2xl">
-            <SearchBar />
-          </div>
-        </div>
+  <Suspense fallback={<div>Loading search...</div>}>
+    <SearchBar />
+  </Suspense>
+</div>
+        
       </section>
 
       {/* Categories */}
