@@ -77,7 +77,7 @@ export default function HomePage() {
     <SearchBar />
   </Suspense>
 </div>
-        
+   </div>     
       </section>
 
       {/* Categories */}
